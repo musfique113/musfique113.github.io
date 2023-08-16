@@ -30,7 +30,7 @@
       hsla(240, 1%, 18%, 0.251) 0%,
       hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(to bottom right,
-      hsl(45, 100%, 71%) 0%,
+  hsl(135, 69%, 51%);
       hsla(36, 100%, 69%, 0) 50%);
   --bg-gradient-yellow-2: linear-gradient(135deg,
       hsla(45, 100%, 71%, 0.251) 0%,
@@ -39,8 +39,8 @@
       hsl(0, 0%, 25%) 0%,
       hsla(0, 0%, 25%, 0) 50%);
   --text-gradient-yellow: linear-gradient(to right,
-      hsl(45, 100%, 72%),
-      hsl(35, 100%, 68%));
+      hsl(130, 100%, 72%),
+      hsl(123, 90%, 60%));
 
   /* solid */
 
@@ -51,8 +51,8 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
+  --orange-yellow-crayola: hsl(135, 69%, 51%);
+  --vegas-gold: hsl(135, 69%, 51%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -375,10 +375,11 @@ main {
 }
 
 .info-content .title {
-  color: var(--white-1);
+  color: black;
   background: var(--onyx);
+  background-color:var(--orange-yellow-crayola);
   font-size: var(--fs-8);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-700);
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
@@ -598,6 +599,7 @@ main {
 
 .service-icon-box img {
   margin: auto;
+  
 }
 
 .service-content-box {
@@ -979,7 +981,11 @@ main {
 .filter-select-box {
   position: relative;
   margin-bottom: 25px;
+  display: none;
 }
+*************************************
+
+
 
 .filter-select {
   background: var(--eerie-black-2);
@@ -1089,6 +1095,7 @@ main {
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
+  
 }
 
 .project-img::before {
@@ -1096,6 +1103,7 @@ main {
   position: absolute;
   top: 0;
   left: 0;
+  
   width: 100%;
   height: 100%;
   background: transparent;
@@ -1137,6 +1145,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  
   transition: var(--transition-1);
 }
 
@@ -1152,19 +1161,19 @@ main {
 .project-title {
   color: var(--orange-yellow-crayola);
   /* color: var(--white-2); */
-  font-size: var(--fs-1);
-  font-weight: bold;
+  font-size: var(--fs-3);
+  font-weight: var(--fw-700);
   text-transform: capitalize;
   line-height: 1.4;
-  text-align: justify;
+
  
 }
 
 .project-category {
   color: var(--light-gray-70);
-  font-size: var(--fs-5);
+  font-size: var(--fs-7);
   font-weight: var(--fw-300);
-  text-align: justify;
+  text-align:start;
 }
 
 
@@ -1346,7 +1355,11 @@ main {
 
   .project-img,
   .certificate-banner-box {
-    height: auto;
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    object-fit: cover;
+    
   }
 
 }
@@ -1443,10 +1456,12 @@ main {
 
   .avatar-box {
     border-radius: 30px;
+    display: grid;
+  place-items: center;
   }
 
   .avatar-box img {
-    width: 120px;
+    width: 150px;
   }
 
   .info-content .name {
@@ -1533,6 +1548,12 @@ main {
     margin-top: 5px;
   }
 
+  .larger-icon {
+    font-size: 55px; 
+    color: var(--orange-yellow-crayola);
+  justify-content: center;/
+  }
+
   .service-content-box {
     text-align: left;
   }
@@ -1558,6 +1579,8 @@ main {
   .reference-avatar-box {
     transform: translate(30px, -30px);
     border-radius: 20px;
+      display: grid;
+    place-items: center;
   }
 
   .reference-avatar-box img {
@@ -1598,6 +1621,10 @@ main {
   .modal-avatar-box {
     border-radius: 18px;
     margin-bottom: 0;
+      border-radius: 30px;
+      display: grid;
+    place-items: center;
+  
   }
 
   .modal-avatar-box img {
@@ -1656,6 +1683,7 @@ main {
   .project-img,
   .certificate-banner-box {
     border-radius: 16px;
+    
   }
 
   .certificate-posts-list {
@@ -1777,7 +1805,7 @@ main {
   }
 
   .filter-list {
-    display: flex;
+    display: none;
     justify-content: flex-start;
     align-items: center;
     gap: 25px;
@@ -2052,10 +2080,13 @@ main {
   .info-content .name {
     white-space: nowrap;
     text-align: center;
+    
   }
 
   .info-content .title {
     margin: auto;
+    color: white;
+
   }
 
   .info_more-btn {
