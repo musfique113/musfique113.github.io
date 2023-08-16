@@ -157,3 +157,16 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+function downloadCV() {
+  // Replace this temporary link with the actual download link to your CV
+  var downloadLink = 'assets/cv/cv.pdf';
+  // var downloadLink = 'https://example.com/path-to-your-cv.pdf';
+
+  var a = document.createElement('a');
+  a.href = downloadLink;
+  a.download = 'your-cv.pdf'; // Set the desired file name for the downloaded CV
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
