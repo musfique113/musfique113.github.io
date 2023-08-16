@@ -616,18 +616,18 @@ main {
 
 
 /**
- * #testimonials 
+ * #reference 
  */
 
-.testimonials {
+.reference {
   margin-bottom: 30px;
 }
 
-.testimonials-title {
+.reference-title {
   margin-bottom: 20px;
 }
 
-.testimonials-list {
+.reference-list {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -641,12 +641,12 @@ main {
   scroll-snap-type: inline mandatory;
 }
 
-.testimonials-item {
+.reference-item {
   min-width: 100%;
   scroll-snap-align: center;
 }
 
-.testimonials-avatar-box {
+.reference-avatar-box {
   position: absolute;
   top: 0;
   left: 0;
@@ -656,11 +656,11 @@ main {
   box-shadow: var(--shadow-1);
 }
 
-.testimonials-item-title {
+.reference-item-title {
   margin-bottom: 7px;
 }
 
-.testimonials-text {
+.reference-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
@@ -674,7 +674,7 @@ main {
 
 
 /**
- * #testimonials-modal
+ * #reference-modal
  */
 
 .modal-container {
@@ -722,7 +722,7 @@ main {
   pointer-events: all;
 }
 
-.testimonials-modal {
+.reference-modal {
   background: var(--eerie-black-2);
   position: relative;
   padding: 15px;
@@ -736,7 +736,7 @@ main {
   z-index: 2;
 }
 
-.modal-container.active .testimonials-modal {
+.modal-container.active .reference-modal {
   transform: scale(1);
   opacity: 1;
 }
@@ -1593,13 +1593,13 @@ textarea.form-input::-webkit-resizer {
     text-align: left;
   }
 
-  /* testimonials */
+  /* reference */
 
-  .testimonials-title {
+  .reference-title {
     margin-bottom: 25px;
   }
 
-  .testimonials-list {
+  .reference-list {
     gap: 30px;
     margin: 0 -30px;
     padding: 30px;
@@ -1611,32 +1611,32 @@ textarea.form-input::-webkit-resizer {
     padding-top: 25px;
   }
 
-  .testimonials-avatar-box {
+  .reference-avatar-box {
     transform: translate(30px, -30px);
     border-radius: 20px;
   }
 
-  .testimonials-avatar-box img {
+  .reference-avatar-box img {
     width: 80px;
   }
 
-  .testimonials-item-title {
+  .reference-item-title {
     margin-bottom: 10px;
     margin-left: 95px;
   }
 
-  .testimonials-text {
+  .reference-text {
     line-clamp: 2;
     -webkit-line-clamp: 2;
   }
 
-  /* testimonials modal */
+  /* reference modal */
 
   .modal-container {
     padding: 20px;
   }
 
-  .testimonials-modal {
+  .reference-modal {
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
@@ -1807,9 +1807,9 @@ textarea.form-input::-webkit-resizer {
    * ABOUT
    */
 
-  /* testimonials modal */
+  /* reference modal */
 
-  .testimonials-modal {
+  .reference-modal {
     gap: 35px;
     max-width: 680px;
   }
@@ -1973,9 +1973,9 @@ textarea.form-input::-webkit-resizer {
     gap: 20px 25px;
   }
 
-  /* testimonials */
+  /* reference */
 
-  .testimonials-item {
+  .reference-item {
     min-width: calc(50% - 15px);
   }
 

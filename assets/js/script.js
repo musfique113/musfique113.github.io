@@ -16,8 +16,8 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 
 
 
-// testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
+// reference variables
+const referenceItem = document.querySelectorAll("[data-reference-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
@@ -28,30 +28,30 @@ const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
 
 // modal toggle function
-const testimonialsModalFunc = function () {
+const referenceModalFunc = function () {
   modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
 }
 
 // add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
+for (let i = 0; i < referenceItem.length; i++) {
 
-  testimonialsItem[i].addEventListener("click", function () {
+  referenceItem[i].addEventListener("click", function () {
 
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+    modalImg.src = this.querySelector("[data-reference-avatar]").src;
+    modalImg.alt = this.querySelector("[data-reference-avatar]").alt;
+    modalTitle.innerHTML = this.querySelector("[data-reference-title]").innerHTML;
+    modalText.innerHTML = this.querySelector("[data-reference-text]").innerHTML;
 
-    testimonialsModalFunc();
+    referenceModalFunc();
 
   });
 
 }
 
 // add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
+modalCloseBtn.addEventListener("click", referenceModalFunc);
+overlay.addEventListener("click", referenceModalFunc);
 
 
 
